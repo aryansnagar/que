@@ -3,7 +3,7 @@ document.getElementById('search').addEventListener('keydown', function (event) {
         const query = encodeURIComponent(this.value.trim());
         if (query) {
             const url = `https://www.google.com/search?q=${query}&udm=14`;
-            window.open(url, '_blank');
+            window.location.href = url;
             this.value = '';
         }
     }
